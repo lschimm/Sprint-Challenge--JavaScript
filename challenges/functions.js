@@ -7,6 +7,12 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
+// function productOfNums(num1, num2, cb){
+//   return cb(num1 * num2);
+// }
+
+// console.log(productOfNums)
+
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -24,8 +30,8 @@
 // ==== Closures ==== 
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
-
 // Explanation: 
+Because of the scope.
 
 
 const external = "I'm outside the function";
