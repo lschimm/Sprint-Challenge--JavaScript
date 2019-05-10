@@ -108,16 +108,28 @@ console.log(contactInfo);
 
 //========================== Remember: they changed their mind. use .filter. lol
 
-// const uni = [];
-
 // for(let i = 0; i < graduates.length; i++) {
 //   if (element === 'uni'){
 //     uni.push(graduates[i].university)
 //   }
 // }
 
-// console.log(uni);
+const uni = [];
 
+const check = graduates.filter((con) => {
+  uni.push(con.university === `${uni}`)
+})
+
+console.log(uni);
+
+
+// const largerPopulation = [];
+
+// const lessThan = zooAnimals.filter((low) => {
+//   largerPopulation.push(low.population < 5)
+// })
+
+// console.log(largerPopulation);
 
 
 
