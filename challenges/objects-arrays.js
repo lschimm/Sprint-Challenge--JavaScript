@@ -90,12 +90,12 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
+
 const contactInfo = [];
 
 for(let i =0; i < graduates.length; i++) {
   contactInfo.push(graduates[i].first_name, graduates[i].email)
 }
-
 
 console.log(contactInfo);
 
@@ -104,32 +104,15 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name.
 /* Create a new array called uni that contains them all. Log the result. */
 
-//========================== Come back to this one. Can't use .filter. wtf.
-
-//========================== Remember: they changed their mind. use .filter. lol
-
-// for(let i = 0; i < graduates.length; i++) {
-//   if (element === 'uni'){
-//     uni.push(graduates[i].university)
-//   }
-// }
-
 const uni = [];
 
-const check = graduates.filter((con) => {
-  uni.push(con.university === `${uni}`)
-})
+for (let i = 0; i < graduates.length; i++) {
+  if(graduates[i].university.match('Uni')){
+    uni.push(graduates[i].university)
+  }
+}
 
 console.log(uni);
-
-
-// const largerPopulation = [];
-
-// const lessThan = zooAnimals.filter((low) => {
-//   largerPopulation.push(low.population < 5)
-// })
-
-// console.log(largerPopulation);
 
 
 

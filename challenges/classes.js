@@ -21,10 +21,12 @@ class CuboidMaker {
         this.height = att1.height
     }
     volume() {
-        return `${this.length} * ${this.width} * ${this.height}`
+        // return `${this.length} * ${this.width} * ${this.height}`
+        return (this.length * this.width * this.height);
     }
     surfaceArea() {
-        return ` 2 * ${this.length} * ${this.width} + ${this.length} * ${this.height} + ${this.width} * ${this.height}`
+        // return ` 2 * ${this.length} * ${this.width} + ${this.length} * ${this.height} + ${this.width} * ${this.height}`
+        return (this.length * this.width + this.length * this.height + this.width * this.height);
     }
 }
 
@@ -43,3 +45,26 @@ console.log(cuboid.surfaceArea()); // 130
 // Find out the formulas for volume and surface area for cubes and create those methods
 // using the dimension properties from CuboidMaker.
 // Test your work by logging out your volume and surface area.
+
+
+class CubeMaker extends CuboidMaker {
+    constructor(att2){
+        super(att2)
+        this.height = att2.height
+        this.width = att2.width
+        this.height = att2.height
+    }
+}
+
+//==== CubeMaker object
+
+const cubo = new CubeMaker({
+    length: 25,
+    height: 25,
+    width: 25 
+})
+
+
+
+console.log(cubo.volume())
+console.log(cuboid.surfaceArea())
