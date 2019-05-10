@@ -29,23 +29,33 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+.map uses return values and returns a new array.
+.forEach doesn't.
 
 2. What is the difference between a function and a method?
+A method is on an object (called on an object or instance)
+A function is independent of an object (called independently and self contained)
 
 3. What is closure?
+Basically a function inside a function.
 
 4. Describe the four rules of the 'this' keyword.
+-(Window/Global Object Binding) In the global scope, "this" will have a larger scop as well (window/console Object;)
+-(Implicit Binding) "this" will be the object before the dot when in a function
+-(New Binding) ""
+-(Explicit binding)""
 
 5. Why do we need super() in an extended class?
+So the 'this' reference gets created
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [~] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
