@@ -9,7 +9,7 @@
 function CuboidMaker (att1) {
   this.length = att1.length;
   this.width = att1.width;
-  this.height - att1.height;
+  this.height = att1.height;
 }
 
 /* == Step 2: Volume Method ==
@@ -49,5 +49,4 @@ const cuboid = new CuboidMaker ({
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
 console.log(cuboid.surfaceArea()); // 130
-
 
